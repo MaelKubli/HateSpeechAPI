@@ -146,6 +146,9 @@ classify <- function(api_token = NULL, query = NULL, endpoint = "classify"){
     stop("Please add an endpoint to the classify function!\n")
   }
 
+  httr::set_config(config(ssl_verifypeer = 0L))
+  httr::set_config(config(ssl_verifyhost = 0L))
+
   get_resp <- httr::POST(url= paste0("https://130.60.24.179/",endpoint,"/"),
                          body = query,
                          httr::add_headers(.headers = c(`AuthToken` = api_token)),
