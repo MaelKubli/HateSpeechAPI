@@ -19,6 +19,7 @@
 #' @importFrom httr POST
 #' @importFrom httr content_type_json
 #' @importFrom httr content
+#' @importFrom httr config
 #' @importFrom jsonlite fromJSON
 #' @importFrom stringr str_trunc
 
@@ -146,7 +147,6 @@ classify <- function(api_token = NULL, query = NULL, endpoint = "classify"){
     stop("Please add an endpoint to the classify function!\n")
   }
 
-  httr::set_config(config(ssl_verifypeer = 0L))
   httr::set_config(config(ssl_verifyhost = 0L))
 
   get_resp <- httr::POST(url= paste0("https://130.60.24.179/",endpoint,"/"),

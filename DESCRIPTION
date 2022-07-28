@@ -1,7 +1,7 @@
 Package: HateSpeechAPI
 Type: Package
 Title: Interface for HateSpeech API of ETH & UZH 
-Version: 0.1.0
+Version: 0.1.1
 Author: Maël Kubli
 Maintainer: Maël Kubli <mael.kubli@uzh.ch>
 Description: An implementation of calls designed to classify textual  
@@ -10,7 +10,7 @@ Description: An implementation of calls designed to classify textual
 License: 
     MIT + file LICENSE
 Depends:
-    R (>= 4.0.0)
+    R (>= 4.2.0)
 Imports:
   	httr,
 	dplyr,
@@ -23,4 +23,4 @@ Encoding: UTF-8
 LazyData: true
 URL: https://wwww.github.com/MaelKubli/HateSpeechAPI
 Language: en-US
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
