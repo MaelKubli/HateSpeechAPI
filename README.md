@@ -14,8 +14,11 @@ In case your text variable contains texts with more than 1'000
 characters the classify_data function will only submit the first 
 1'000 characters o each text. 
 
-If you want to submit other parts of he text you will need to do 
+If you want to submit other parts of the text you will need to do 
 some pre-processing on your own. 
+
+The function calling the api will return the predicted probability of each text being classified as hate speech. 
+The API would actually also return the prediction of the opposite as well but this value can simply be obtained by subtracting the received value from one (1-p).
 
 For more Information about the API see the following page: 
 https://gitlab.com/uzh-hatespeech-api/docs
