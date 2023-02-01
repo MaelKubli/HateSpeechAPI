@@ -1,7 +1,7 @@
 Package: HateSpeechAPI
 Type: Package
 Title: Interface for HateSpeech API of ETH & UZH 
-Version: 0.1.1
+Version: 0.1.2
 Author: Maël Kubli
 Maintainer: Maël Kubli <mael.kubli@uzh.ch>
 Description: An implementation of calls designed to classify textual  
