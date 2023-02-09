@@ -39,9 +39,9 @@ query_maker <- function(data = NULL, text_name = NULL){
   dat_vec <- unlist(data[,1])
   max_length_txt <- max(nchar(dat_vec))
 
-  if(max_length_txt > 900){
-    warning("The API cannot classify text snippets larger than 900 characters!\nWe will cut all characters after 900 chracters.\n")
-    dat_vec <- stringr::str_trunc(dat_vec, 900, "right")
+  if(max_length_txt > 1999){
+    warning("The API cannot classify text snippets larger than 2000 characters!\nWe will cut all characters after 2000 chracters.\n")
+    dat_vec <- stringr::str_trunc(dat_vec, 1999, "right")
   }
 
   dat_list <- as.list(t(dat_vec))

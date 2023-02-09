@@ -62,9 +62,9 @@ classify_data <- function(api_token = NULL, endpoint = "classify",  query = NULL
     data <- unlist(data[,1])
     max_length_txt <- max(nchar(data))
 
-    if(max_length_txt > 900){
-      warning("The API cannot classify text snippets larger than 900 characters!\nWe will cut all characters after 900 chracters.\n")
-      data <- stringr::str_trunc(data, 900, "right")
+    if(max_length_txt > 1999){
+      warning("The API cannot classify text snippets larger than 2000 characters!\nWe will cut all characters after 2000 chracters.\n")
+      data <- stringr::str_trunc(data, 1999, "right")
     }
 
     query <- as.list(t(data))
