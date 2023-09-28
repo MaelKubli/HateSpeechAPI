@@ -12,7 +12,7 @@ library(HateSpeechAPI)
 The API only accepts texts with a maximum of 1'000 character. 
 In case your text variable contains texts with more than 1'000 
 characters the classify_data function will only submit the first 
-1'000 characters o each text. 
+1'000 characters of each text. 
 
 If you want to submit other parts of the text you will need to do 
 some pre-processing on your own. 
